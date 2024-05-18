@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/56401c6035.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <nav class="navbar bg-body-tertiary">
+        <div class="container-fluid">
+            <a class="navbar-brand"><i class="fa-brands fa-instagram fa-2xl"></i> Instagram</a>
+            <form class="d-flex" role="search">
+                <button type="button" class="btn btn-success me-2" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                    Create a new post
+                </button>
+                <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false"
+                    tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h1 class="modal-title fs-5" id="staticBackdropLabel"><strong>Create a new post</strong>
+                                </h1>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <!-- <p>Caption:<br></p> -->
+                                <form class="was-validated">
+                                    <div class="mb-3">
+                                        <label for="validationTextarea"
+                                            class="form-label"><strong>Caption:</strong></label>
+                                        <textarea class="form-control" id="validationTextarea"
+                                            placeholder="Add the caption of your post here" required></textarea>
+                                        <!-- <div class="invalid-feedback">
+                                        </div> -->
+                                    </div>
+                                    <div class="d-grid gap-2 d-md-block">
+                                        <button class="btn btn-light" type="button"><i
+                                                class="fa-solid fa-camera"></i></button>
+                                        <button class="btn btn-light" type="button"><i
+                                                class="fa-solid fa-location-dot"></i></button>
+                                    </div>
+                            </div>
+                            <!-- <button><i class="fa-solid fa-camera"></i></button>
+                            <button><i class="fa-solid fa-location-dot"></i></button> -->
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary " data-bs-dismiss="modal">Close</button>
+                                <button type="button" class="btn btn-success">Publish</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="dropdown">
+                    <button class="btn btn-secondary dropdown-toggle column-gap-10" type="button"
+                        data-bs-toggle="dropdown" aria-expanded="false">
+                        <i class="fa-solid fa-gear"></i>
+                    </button>
+                    <ul class="dropdown-menu dropdown-menu-end">
+                        <li><a class="dropdown-item" href="#">Profile</a></li>
+                        <li><a class="dropdown-item" href="#">Accesibility</a></li>
+                        <li><a class="dropdown-item" href="#">Privacy and Data</a></li>
+                        <li>
+                            <hr class="dropdown-divider">
+                        </li>
+                        <li><a class="dropdown-item text-danger" href="#">Log out</a></li>
+                    </ul>
+                </div>
+            </form>
+        </div>
+    </nav>
+     <ul class="nav justify-content-center" id="myTab" role="tablist">
+        <li class="nav-item" role="presentation">
+          <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home-tab-pane" type="button" role="tab" aria-controls="home-tab-pane" aria-selected="true"><i class="fa-solid fa-table-cells fa-2xl"></i></button><!--grid tab-->
+        </li>
+        <li class="nav-item" role="presentation">
+          <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile-tab-pane" type="button" role="tab" aria-controls="profile-tab-pane" aria-selected="false"><i class="fa-solid fa-square fa-2xl"></i></button> <!-- Profile (square tab) -->
+         
+        </li>
+      </ul>
+      <!-- Grid section -->
+      <div class="tab-content" id="myTabContent">
+        <div class="tab-pane fade show active" id="home-tab-pane" role="tabpanel" aria-labelledby="home-tab" tabindex="0"><p>
+            <div class="white">
+                <div class="container-img">
+                    <div class="text-center">
+                        <div class="grid gap-2">
+                            <div class="p-2 g-col-5">
+                                <img src="https://picsum.photos/id/1/400/" class="p-2 float" alt="...">
+                                <img src="https://picsum.photos/id/2/400/" class="p-2" alt="...">
+                                <img src="https://picsum.photos/id/237/400/" class="p-2 float-left" alt="...">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="container-img">
+                    <div class="text-center">
+                        <div class="grid gap-2">
+                            <div class="g-col-5">
+                                <img src="https://picsum.photos/id/11/400/" class="p-2 float" alt="...">
+                                <img src="https://picsum.photos/id/20/400/" class="p-2" alt="...">
+                                <img src="https://picsum.photos/id/10/400/" class="p-2 float-left" alt="...">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="container-img">
+                    <div class="text-center">
+                        <div class="grid gap-2">
+                            <div class="g-col-5">
+                                <img src="https://picsum.photos/id/51/400/" class="p-2 float" alt="...">
+                                <img src="https://picsum.photos/id/60/400/" class="p-2" alt="...">
+                                <img src="https://picsum.photos/id/65/400/" class="p-2 float-left" alt="...">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div></p></div><!-- Profile (grid tab) -->
+            <!-- SQUARE TAB -->
+        <div class="tab-pane fade d-flex flex-column align-items-center" id="profile-tab-pane" role="tabpanel" aria-labelledby="profile-tab" tabindex="0"><p>
+            <div class="card" style="width: 30rem; margin-top: 10px">
+                  <div class="card-body">
+                  <div class="card-title d-flex justify-content-between">
+                    <span><strong><h3> Coding Practice </h3></strong></span>
+                    <span>01/01</span>
+                  </div>
+                  <img src="https://picsum.photos/id/1/600/" class="card-img-top" alt="...">
+                  <div class="content">
+                    <h5> Likes: 125</h5>
+                  <p class="card-text">Trying to be a wealthy Coding Genius.</p></div>
+                </div>
+              </div>
+              <div class="card" style="width: 30rem; margin-top: 10px">
+                <div class="card-body">
+                <div class="card-title d-flex justify-content-between">
+                  <span><strong><h3>Sexy Laptop</h3></strong></span>
+                  <span>01/02</span>
+                </div>
+                <img src="https://picsum.photos/id/2/400/" class="card-img-top" alt="...">
+                <div class="content">
+                  <h5> Likes: 25</h5>
+                <p class="card-text"> Need to upgrade.</p></div>
+              </div>
+            </div>
+            <div class="card" style="width: 30rem; margin-top: 10px;">
+                <div class="card-body">
+                <div class="card-title d-flex justify-content-between">
+                  <span><strong><h3>Cutest Doggo</h3></strong></span>
+                  <span>01/03</span>
+                </div>
+                <img src="https://picsum.photos/id/237/400/" class="card-img-top" alt="...">
+                <div class="content">
+                  <h5> Likes: 223</h5>
+                <p class="card-text">I have the cutest dog picture.</p></div>
+              </div>
+            </div>
+            <div class="card" style="width: 30rem; margin-top: 10px;">
+                <div class="card-body">
+                <div class="card-title d-flex justify-content-between">
+                  <span><strong><h3>Tech Escape</h3></strong></span>
+                  <span>01/04</span>
+                </div>
+                <img src="https://picsum.photos/id/11/400/" class="card-img-top" alt="...">
+                <div class="content">
+                  <h5> Likes: 156 </h5>
+                <p class="card-text">Its good to take some escape time and get into nature.</p></div>
+              </div>
+            </div>
+            <div class="card" style="width: 30rem; margin-top: 10px">
+                <div class="card-body">
+                <div class="card-title d-flex justify-content-between">
+                  <span><strong><h3>Basically Smart</h3></strong></span>
+                  <span>01/05</span>
+                </div>
+                <img src="https://picsum.photos/id/20/400/" class="card-img-top" alt="...">
+                <div class="content">
+                  <h5> Likes: 59 </h5>
+                <p class="card-text"> Just organized my desk!</p></div>
+              </div>
+            </div>
+            <div class="card" style="width: 30rem; margin-top: 10px">
+                <div class="card-body">
+                <div class="card-title d-flex justify-content-between">
+                  <span><strong><h3>Alaska</h3></strong></span>
+                  <span>01/06</span>
+                </div>
+                <img src="https://picsum.photos/id/10/400/" class="card-img-top" alt="...">
+                <div class="content">
+                  <h5> Likes: 46</h5>
+                <p class="card-text">Look at this view.</p></div>
+              </div>
+            </div>
+              </div>
+            </p></div> <!-- square feed tab -->  
+      </div>
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+            integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+            crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
+            integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
+            crossorigin="anonymous"></script>
+</body>
+</html>
